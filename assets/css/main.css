@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+header .navbar .collapse {
+  margin-left: 30px;
+}
+header .navbar .collapse ul li a {
+  color: black !important;
+}
+header .navbar .collapse .icons {
+  display: flex;
+  gap: 20px;
+}
+header .navbar .collapse .icons i {
+  font-size: 20px;
+}
+
+#season {
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-image: url(/assets/img/slide-02.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#season .season_text {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#season .season_text a {
+  width: 100%;
+  max-width: 140px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 23px;
+  background-color: #717FE0;
+  color: white;
+}
+#season .season_text a:hover {
+  text-decoration: none;
+}
+#season .season_text h2 {
+  color: #333;
+  font-family: PlayfairDisplay-Bold;
+  font-size: 60px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+@media (max-width: 775px) {
+  #season .season_text h2 {
+    font-size: 40px;
+  }
+}
+#season .season_text h3 {
+  font-family: Poppins-Regular;
+  font-size: 30px;
+  line-height: 1.2857;
+  color: #333;
+}
+
+#womens {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#womens .respons_cnt {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+}
+#womens .respons_cnt .women {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-image: url(/assets/img/banner-01.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ebe5e5;
+  margin-bottom: 20px;
+  margin: auto;
+}
+#womens .respons_cnt .women .text_wma {
+  padding: 20px;
+}
+#womens .respons_cnt .men {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-image: url(/assets/img/banner-02.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ebe5e5;
+  margin-bottom: 20px;
+  margin: auto;
+}
+#womens .respons_cnt .men .text_wma {
+  padding: 20px;
+}
+#womens .respons_cnt .acc {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-image: url(/assets/img/banner-03.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ebe5e5;
+  margin-bottom: 20px;
+  margin: auto;
+}
+#womens .respons_cnt .acc .text_wma {
+  padding: 20px;
+}
+
+#season,
+#womens {
+  margin-bottom: 20px;
+}
+
+#product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#product .products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#product .products h1 {
+  font-family: Poppins-Bold;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#product .products .buttonx {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+#product .products .buttonx button {
+  color: #888;
+  border: none;
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+#productsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.boxDiv {
+  width: calc(33.33% - 20px);
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: auto;
+}
+.boxDiv .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.boxDiv img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.boxDiv button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.boxDiv button:hover {
+  background-color: #2980b9;
+}
+
+@media (min-width: 500px) {
+  .boxDiv {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 568px) {
+  .boxDiv {
+    width: calc(100% - 20px);
+  }
+}
+@media (min-width: 1000px) {
+  .boxDiv {
+    width: calc(33% - 20px);
+  }
+}
+#pagi {
+  background-color: red;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+#pagi:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+footer .textx {
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #888;
+}
+
+body {
+  overflow: scroll;
+}
